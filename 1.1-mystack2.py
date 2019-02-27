@@ -39,6 +39,9 @@ class Mystack:
 
         return self.stackMin[-1]
 
+    def peek(self):
+        return self.stackData[-1]
+
 
 stack = Mystack()
 

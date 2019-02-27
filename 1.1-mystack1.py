@@ -7,8 +7,9 @@ from collections import deque
 
 
 class Mystack:
-    stackData = deque()
-    stackMin = deque()
+    def __init__(self):
+        self.stackData = deque()
+        self.stackMin = deque()
 
     def push(self, num):
         if len(self.stackData) and num <= self.stackMin[-1]:
